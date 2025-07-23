@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1111"
+    tools:context=".Profile">
+    
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    app:srcCompat = "@drawable/ic_top"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgPhoto"
+                    android:layout_width="137dp"
+                    android:layout_height="137dp"
+                    android:src="@drawable/photo"
+                    app:layout_constraintBottom_toBottomOf="@id/imageTop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageTop"
+                    app:civ_border_width="4dp"
+                    app:civ_border_color="#ffff"
+                    android:paddingBottom="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SURYANA"
+                    app:layout_constraintStart_toStartOf="@id/imgPhoto"
+                    app:layout_constraintEnd_toEndOf="@id/imgPhoto"
+                    app:layout_constraintBottom_toBottomOf="@id/imgPhoto"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Blue"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textName"
+                    >
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic1"
+                        android:text="Universitas Pelita Bangsa"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic3"
+                        android:text="TI.23.C9"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic2"
+                        android:text="suryanasuryana2003@gmail.com"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic5"
+                        android:text="089662903946"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic4"
+                        android:text="KP.Babakan Lio, Desa Cipayung ,Kec. Cikarang Timur, Kab. Bekasi"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btnback"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_blue"
+                        android:text="Main Page"
+                        android:textColor="#ffff"
+                        android:textAllCaps="false"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
